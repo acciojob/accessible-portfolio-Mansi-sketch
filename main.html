@@ -1,37 +1,41 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
-	<title>ARIA role</title>
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <h1>
-		Introduction about Image tag.
-	</h1>
-
-	<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"/>
-	<nav>
-		<a href="#image"> Image</a>
-	</nav>
-	<ul id="image">
-		<li>
-			A child
-		</li>
-		<li>
-			A girl
-		</li>
-		<li>
-			An image of a girl.
-		</li>
-	</ul>
-	
+    <header role="banner">
+        <h1 role="heading">Mansi Verma</h1>
+        <nav role="navigation">
+            <ul role="list">
+                <li role="listitem"><a href="#about">About</a></li>
+                <li role="listitem"><a href="#work">Work</a></li>
+                <li role="listitem"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <section id="about">
+            <h2 role="heading">About Me</h2>
+            <p>I am a fullstack developer.</p>
+            <img role="img" src="your-image.jpg" alt="profile picture.">
+        </section>
+        <section id="work">
+            <h2 role="heading">My Work</h2>
+            <ul role="list">
+                <li role="listitem">Design frontend</li>
+                <li role="listitem">Backend developer</li>
+                <li role="listitem">Frontend developer</li>
+            </ul>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <p>Contact me on my mail ID i.e. mansiverma@gmail.com</p>
+    </footer>
+		
 	<script type="text/javascript" src="./script.js">
 </script>
-
 </body>
-
+</html>
 </html>
